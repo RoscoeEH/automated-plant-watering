@@ -48,3 +48,8 @@ def compareResults(spi):
 
         # Adds line breaks for next entry to be read clearly
         file.write("\n---\n")
+
+if __name__ == "__main__":
+    spi = spiOpen()
+    compareResults(spi)
+    spiClose(spi)
